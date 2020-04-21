@@ -13,6 +13,11 @@ namespace ToysCart
             var settings = new FriendlyUrlSettings();
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
+            routes.MapPageRoute(
+     "Home",
+     string.Empty,
+     "~/Home.aspx"
+ );
         }
     }
 }
